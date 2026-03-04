@@ -1,1 +1,0 @@
-#reference Pycharm project for what to include, look up online, ask gpt. make sure you handle init properly
