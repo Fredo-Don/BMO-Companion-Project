@@ -1,8 +1,8 @@
 import pygame
-
+import sys
 #set up pygame
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((800, 480))
 running = True
 clock = pygame.time.Clock()
 #BMOs face color for screen fill
@@ -32,12 +32,13 @@ while running:
         if event.type == pygame.QUIT: running = False
 
     
-    screen.blit(testFace, (facePosition, 250))
-    screen.blit(textSurface, (500, 200))
+    screen.blit(testFace, (facePosition, 200))
+    screen.blit(textSurface, (225, 100))
+    
 
     # update the display
     pygame.display.update()
-    if facePosition > 1280: facePosition = -200
+    if facePosition > 800: facePosition = -400
     else: facePosition += 4
     #limit to 60 fps
     clock.tick(60)
